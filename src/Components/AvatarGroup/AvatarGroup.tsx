@@ -46,20 +46,23 @@ const CardImage = ({ size, image, name }: CardImageProps) => {
   );
 };
 
-type ItemAvatarGroups = Omit<CardImageProps, "size">;
+type ItemAvatarGroupsType = Omit<CardImageProps, "size">;
 
-type AvatarGroupProps = {
+export type AvatarGroupProps = {
   size: SizeType;
   maxLength?: number;
-  items: Array<ItemAvatarGroups>;
+  items: Array<ItemAvatarGroupsType>;
 };
 
 const AvatarGroup = ({ size = "md", maxLength, items }: AvatarGroupProps) => {
   return (
-    <div className={styles["container"]}>
+    <div
+      className={styles["container"]}
+      data-testid="container-avatar-group-test"
+    >
       {items
         ?.slice(0, maxLength || -1)
-        .map((item: ItemAvatarGroups, index: number) => (
+        .map((item: ItemAvatarGroupsType, index: number) => (
           <CardImage
             key={index}
             image={item.image}

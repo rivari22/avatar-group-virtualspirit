@@ -20,7 +20,7 @@ export const dataMock = {
     { image: AvatarImage, name: "Tomy Budi" },
     { image: AvatarImage, name: "Tomy Budi" },
     { image: AvatarImage, name: "Tomy Budi" },
-    { image: AvatarImage, name: "Tomy Budi" },
+    { image: "", name: "Tomy Budi" },
     { image: AvatarImage, name: "Tomy Budi" },
     { image: AvatarImage, name: "Tomy Budi" },
   ],
