@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+}
+.avatar {
+  border-radius: 50%;
+  outline: 2px solid white;
+  outline-offset: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empty-image {
+  background-color: #E7EAF4;
+}
+
+.card-size-xs {
+  width: 32px;
+  height: 32px;
+}
+.card-size-sm {
+  width: 46px;
+  height: 46px;
+}
+.card-size-md {
+  width: 64px;
+  height: 64px;
+}
+.card-size-lg {
+  width: 120px;
+  height: 120px;
+}
+
+.font-card {
+  color: #767B87;
+  margin-bottom: 4px;
+}
+.font-card-xs {
+  font-size: 14px;
+  font-weight: bold;
+}
+.font-card-sm {
+  font-size: 20px;
+  font-weight: bold;
+}
+.font-card-md {
+  font-size: 30px;
+  font-weight: bold;
+}
+.font-card-lg {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.avatar-gap:first-child {
+  margin-left: 0px;
+}
+.avatar-gap-xs:not(first-child) {
+  margin-left: -8px;
+}
+.avatar-gap-sm:not(first-child) {
+  margin-left: -12px;
+}
+.avatar-gap-md:not(first-child) {
+  margin-left: -18px;
+}
+.avatar-gap-lg:not(first-child) {
+  margin-left: -34px;
+}
